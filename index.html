@@ -42,92 +42,18 @@
             width: 285px;
         } 
 
-        @media (max-width: 770px) {
 
-            .main {
-                width: 500px;
-            }
+        @media (max-width: 640px){
 
-            .header {
-                width: 500px;
-            }
-
-            .mainImg {
-                width: 500px;
-            }
-            .advantages {
-                width: 500px;
-            }
-            .block_td {
-                display: block !important;
-            }
-            .item {
-                margin: 0 !important;
-                margin-top: 10px !important;
-                float: none;
-                margin-left: 85px !important;
-            }
-            .item_first {
-                margin-top: 30px !important;
-            }
-            .item_last {
-                margin-bottom: 30px !important;
-            }
-            .block_2{
-                display: block !important;
-                width: 300px !important;
-                margin-left: 100px;
-            }
-            .block_2 table {
-                width: 300px !important;
-            }
-            .block_footerImg {
-                display: block !important;
-                width: 130px !important;
-                margin-left: 185px;
-            }
-            .block_footerImg img {
-                margin-bottom: 0 !important;
-            }
-            .block_footerText {
-                display: block !important;
-                width: 400px !important;
-                margin-left: 50px;
-            }
-
-            .table{
-                width: 500px;
-            }
-        }
-
-        @media (max-width: 540px) {
-            .item__text{
-                width: 230px;
-            }
-            .main {
+            .container {
                 width: 300px;
-            }
-
-            .header {
-                width: 300px;
-            }
-
-            .header__img {
-                width: 150px;
             }
             .header__text {
                 font-size: 12px !important; 
                 width: 150px !important;
             }
-
-            .mainImg {
-                width: 300px;
-            }
-            .advantages {
-                width: 300px;
-            }
-            .block_td {
-                display: block !important;
+            .header__img {
+                width: 150px;
             }
             .item {
                 margin: 0 !important;
@@ -142,14 +68,41 @@
             .item_last {
                 margin-bottom: 30px !important;
             }
-
-            .block_2{
+            .item_icon {
+                width: 50px !important;
+            }
+            .item_icon img {
+                padding-left: 7px !important;
+            }
+            .block_2 p{
                 display: block !important;
                 width: 270px !important;
-                margin-left: 15px;
+                margin-left: 15px !important;
             }
-            .block_2 table {
+            .block_2 br{
+                display: none !important;
+            }
+            .block_2 img {
                 width: 300px !important;
+                margin-left: 15px !important;
+            }
+            .block_2 .block_3 {
+                width: 240px !important;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .block_4 {
+                width: 248px !important;
+            }
+            .block_4 p{
+                width: 248px !important;
+                margin-left: 15px !important;
+            }
+            .block_4 a{
+                width: 248px !important;
+                margin-left: 15px !important;
             }
             .block_footerImg {
                 display: block !important;
@@ -161,18 +114,18 @@
             }
             .block_footerText {
                 display: block !important;
-                width: 270px !important;
-                margin-left: 15px;
+                width: 250px !important;
+                margin-left: 25px;
+            }
+            .block_footerText p{
+                text-align: center;
 
             }
             .flag{ 
-                float: none;
-            }
-
-            .table{
-                width: 300px;
+                display: none;
             }
         }
+        
 
 	</style>
 </head>
@@ -184,12 +137,12 @@
         <tr>
             <td>
                 <!-- MAIN -->
-                <table class="main" cellpadding="0" cellspacing="0" width="750" align="center">
+                <table class="main container" cellpadding="0" cellspacing="0" width="600" align="center">
 
                     <!-- header -->
                     <tr>
                         <td>
-                            <table class="header" cellpadding="0" cellspacing="0" width="750" align="center"
+                            <table class="header container" cellpadding="0" cellspacing="0" width="600" align="center"
                             >
                                 <tr>
                                     <td>
@@ -215,8 +168,8 @@
                     <!-- main picture -->
                     <tr>
                         <td>
-                            <a href="https://i-sticker.us/">
-                                <img src="http://dianaivanovna1999.tmweb.ru/email_img/img-i-sticker.png" class="mainImg" width="750" alt="i-sticker"/>
+                            <a href="https://i-sticker.us/#about-i-sticker">
+                                <img src="http://dianaivanovna1999.tmweb.ru/email_img/img-i-sticker.png" class="mainImg container" width="600" alt="i-sticker"/>
                             </a>
                         </td>
                     </tr>
@@ -228,33 +181,35 @@
                             <!-- advantages -->
                             <tr>
                                 <td>
-                                    <table class="advantages" cellpadding="0" cellspacing="0" width="750" align="center">
+                                    <table class="advantages container" cellpadding="0" cellspacing="0" width="600" align="center">
                                         
                                         <tr>
                                             <td class="block_td">
-                                                <table class="item item_first" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="330" align="right"  style="border-radius: 15px; margin-top: 40px;">
+                                                <table class="item item_first" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="400" align="center"  style="border-radius: 15px; margin-top: 40px; ">
                                                     <tr >
-                                                        <td width="45">
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_1.png" width="23" height="23" alt="icon repair" style="padding-left: 10px;"/>
+                                                        <td width="50" class="item_icon">
+                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_1.png" width="23" height="23" alt="icon repair" style="padding-left: 20px; "/>
                                                         </td>
                                                         <td class="item__text" >
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 10px;margin-bottom: 5px;">INSTALLATION FREE</p>
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 10px;">Save installation cost and down time<br/>
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 15px; margin-bottom: 5px;">INSTALLATION FREE</p>
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 15px;">Save installation cost and down time<br/>
                                                                 Peel-and-stick, hassle-free deployment</p>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td width="10" class="block_td" ></td>
+                                        </tr>
+
+                                        <tr>
                                             <td class="block_td">
-                                                <table class="item" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="330"  align="left" style="border-radius: 15px; margin-top: 40px;">
+                                                <table class="item" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="400" align="center"  style="border-radius: 15px; margin-top: 15px; ">
                                                     <tr >
-                                                        <td width="45">
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_4.png"  alt="icon sun" width="23" height="23" style="padding-left: 10px;"/>
+                                                        <td width="50" class="item_icon">
+                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_4.png" width="23" height="23" alt="icon sun" style="padding-left: 20px; "/>
                                                         </td>
-                                                        <td class="item__text">
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 10px;margin-bottom: 5px;">POWERED BY THE SUN</p>
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 10px;">No need to replace batteries <br/><br/></p>
+                                                        <td class="item__text" >
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 15px; margin-bottom: 5px;">POWERED BY THE SUN</p>
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 15px;">No need to replace batteries </p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -263,29 +218,49 @@
 
                                         <tr>
                                             <td class="block_td">
-                                                <table class="item" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="330" align="right" style="border-radius: 15px; margin-top: 15px;">
+                                                <table class="item " bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="400" align="center"  style="border-radius: 15px; margin-top: 15px; ">
                                                     <tr >
-                                                        <td width="45">
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_2.png" width="23" height="23" alt="icon sim free" style="padding-left: 10px;"/>
+                                                        <td width="50" class="item_icon">
+                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_2.png" width="23" height="23" alt="icon sim free"  style="padding-left: 20px; "/>
                                                         </td>
-                                                        <td class="item__text">
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 10px;margin-bottom: 5px;">SIM-FREE</p>
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 10px;">Save on cellular fees and eliminate
+                                                        <td class="item__text" >
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 15px; margin-bottom: 5px;">SIM-FREE</p>
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 15px;">Save on cellular fees and eliminate<br/>
                                                                 SIM complications</p>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td width="10" class="block_td"></td>
+                                        </tr>
+
+                                        <tr>
                                             <td class="block_td">
-                                                <table class="item" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="330"  align="left" style="border-radius: 15px; margin-top: 15px;">
+                                                <table class="item " bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="400" align="center"  style="border-radius: 15px; margin-top: 15px; ">
                                                     <tr >
-                                                        <td width="45">
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_5.png"  alt="icon privacy" width="23" height="23" style="padding-left: 10px;"/>
+                                                        <td width="50" class="item_icon">
+                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_5.png" width="23" height="23" alt="icon privacy"  style="padding-left: 20px; "/>
                                                         </td>
-                                                        <td class="item__text">
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 10px;margin-bottom: 5px;">PROTECTS YOUR EMPLOYEES' PRIVACY</p>
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 10px;">Allows for ﬂexible data transmission to avoid the "Big Brother" image</p>
+                                                        <td class="item__text" >
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 15px; margin-bottom: 5px;">PROTECTS YOUR EMPLOYEES' PRIVACY</p>
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 15px;">Allows for ﬂexible data transmission <br/>to avoid the "Big Brother" image</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        
+
+                                        <tr>
+                                            <td class="block_td">
+                                                <table class="item " bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="400" align="center"  style="border-radius: 15px; margin-top: 15px; ">
+                                                    <tr >
+                                                        <td width="50" class="item_icon">
+                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_3.png" width="23" height="23" alt="icon WIRELESS" style="padding-left: 20px; "/>
+                                                        </td>
+                                                        <td class="item__text" >
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 15px; margin-bottom: 5px;">PROTECTS YOUR EMPLOYEES' PRIVACY</p>
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 15px;">Built-in sensors seamlessly work in the background
+                                                            <br/> and transmit data using the latest IoT technologies</p>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -294,37 +269,19 @@
 
                                         <tr>
                                             <td class="block_td">
-                                                <table class="item" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="330" align="right" style="border-radius: 15px; margin-top: 15px; margin-bottom: 40px;">
+                                                <table class="item item_last" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="400" align="center"  style="border-radius: 15px; margin-top: 15px; margin-bottom: 40px;">
                                                     <tr >
-                                                        <td width="45">
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_3.png" width="23" height="23" alt="icon WIRELESS" style="padding-left: 10px;"/>
+                                                        <td width="50" class="item_icon">
+                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_6.png" width="23" height="23" alt="icon phone" style="padding-left: 20px; "/>
                                                         </td>
-                                                        <td class="item__text">
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 10px;margin-bottom: 5px;">TOTALLY WIRELESS AND AUTONOMOUS</p>
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 10px;">Built-in sensors seamlessly work in the background
-                                                                and transmit data using the  <br/>latest IoT technologies</p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                            <td width="10" class="block_td"></td>
-                                            <td class="block_td">
-                                                <table class="item item_last" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="330"  align="left" style="border-radius: 15px; margin-top: 15px; margin-bottom: 40px;">
-                                                    <tr >
-                                                        <td width="45">
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/icon_6.png"  alt="icon phone" width="23" height="23" style="padding-left: 10px;"/>
-                                                        </td>
-                                                        <td class="item__text">
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 10px;margin-bottom: 5px;">VEHICLE ELECTRIC SYSTEM AND WARRANTY</p>
-                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 10px;">Does not connect to the vehicle so no battery drain, vehicle hacking, error messages</p>
+                                                        <td class="item__text" >
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 14px; font-weight: bold; padding-top: 15px; margin-bottom: 5px;">VEHICLE ELECTRIC SYSTEM AND WARRANTY</p>
+                                                            <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 12px; padding-right: 10px; padding-bottom: 15px;">Does not connect to the vehicle so no battery<br/> drain, vehicle hacking, error messages</p>
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
-
-
-
                                         
 
                                     </table>
@@ -336,21 +293,24 @@
                             <!-- devices -->
                             <tr>
                                 <td>
-                                    <table cellpadding="0" class="table" cellspacing="0" width="650" align="center">
+                                    <table cellpadding="0" class="table container" cellspacing="0" width="600" align="center">
                                         <tr>
-                                            <td width="50%" class="block_2">
-                                                <img src="http://dianaivanovna1999.tmweb.ru/email_img/devices.png"  style="margin-right:50px; " alt="devices"/>
+                                            <td class="block_2">
+                                                <img src="http://dianaivanovna1999.tmweb.ru/email_img/devices.png"  style="width: 400px; margin-left:100px; " alt="devices"/>
                                             </td>
-                                            <td width="50%" class="block_2">
-                                                <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 16px; font-weight: bold; color: #ffffff; ">
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td width="400px" class="block_2">
+                                                <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif;color: #26346e; font-size: 16px; font-weight: bold; color: #ffffff; width: 400px; margin-left: 100px;">
                                                     To honor UN Global Road Safety week, <br/>
                                                     THE HARDWARE IS ON US!
                                                 </p>
-                                                <p style="margin: 0px; margin-top: 20px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #ffffff; ">
+                                                <p style="margin: 0px; margin-top: 20px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #ffffff; width: 400px; margin-left: 100px;">
                                                     We want you to  slow  down  … and to help you get started fast, RGRAuto is offering our breakthrough technology without hardware fees*  To show our support for safer roads, we will provide you with 30  FREE I-Stickers.
                                                     <a href="https://www.unroadsafetyweek.org/uploads/clickdownbox_tab/myths_and_facts.pdf" style="color: #2996de;">Why 30?</a>
                                                 </p>
-                                                <p style="margin: 0px; margin-top: 10px; font-family: Helvetica, Arial, sans-serif;font-weight: bold; font-size: 16px; color: #ffffff; background-color: #e9550d; border-radius: 20px; padding-right: 15px; padding-left: 15px; padding-top: 15px; padding-bottom: 15px; text-align: center; margin-bottom: 20px;">
+                                                <p class="block_3" style="margin: 0px; margin-top: 10px; font-family: Helvetica, Arial, sans-serif;font-weight: bold; font-size: 16px; color: #ffffff; background-color: #e9550d; border-radius: 20px; padding-right: 15px; padding-left: 15px; padding-top: 15px; padding-bottom: 15px; text-align: center; margin-bottom: 20px; width: 400px; margin-left: 100px;">
                                                     Make your ﬂeet IoT connected<br/>
                                                     in no time and with no hassle
                                                 </p>
@@ -363,25 +323,38 @@
 
                             <tr >
                                 <td>
-                                    <table cellpadding="0"  class="table" cellspacing="0" width="650" align="center">
+                                    <table cellpadding="0"  class="table container" cellspacing="0" width="600" align="center">
                                         <tr>
-                                            <td class="block_2">
-                                                <table cellpadding="0"  class="table" cellspacing="0"  width="100%" align="center">
+                                            <td>
+                                                <table cellpadding="0"  class="table  " cellspacing="0"  width="200" align="center">
                                                     <tr>
-                                                        <td>
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/googlePlay.png" style="margin-bottom: 20px;" alt="google play"/>
+                                                        <td >
+                                                            <a href="https://play.google.com/store/apps/details?id=com.popapp.isticker" >
+                                                                <img src="http://dianaivanovna1999.tmweb.ru/email_img/googlePlay.png" style="margin-bottom: 20px;" alt="google play"/>
+                                                            </a>
                                                         </td>
                                                         <td>
-                                                            <img src="http://dianaivanovna1999.tmweb.ru/email_img/appStore.png" style="margin-bottom: 20px;" alt="app Store"/>
+                                                            <a href="https://apps.apple.com/us/app/i-sticker/id1312794350">
+                                                                <img src="http://dianaivanovna1999.tmweb.ru/email_img/appStore.png" style="margin-bottom: 20px;" alt="app Store"/>
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 </table>
                                                 
                                             </td>
-
-                                            <td width="60%" class="block_2">
-                                                <p style="margin: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;  color: #ffffff; border: 1px solid #e9550d; border-radius: 15px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; margin-bottom: 20px;">* Conditions apply. Please contact us for more information.</p>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table cellpadding="0"  class="table container" cellspacing="0"  width="400" align="center" >
+                                                    <tr>
+                                                        <td width="400" class="block_4">
+                                                            <a href="https://i-sticker.us/#contact-us" style="margin: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;  color: #ffffff; border: 1px solid #e9550d; border-radius: 15px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; margin-bottom: 20px; display: block; text-decoration: none;">* Conditions apply. Please contact us for more information.
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </td>
+                                            
                                         </tr>
 
                                     </table>
@@ -395,7 +368,7 @@
                     
                     <tr>
                         <td>
-                            <table  class="table" cellpadding="0" cellspacing="0" width="650" align="center" >
+                            <table  class="table container" cellpadding="0" cellspacing="0" width="600" align="center" >
                                 <tr>
                                     <td class="block_footerImg">
                                         <a href="https://rgrauto.ru/">
@@ -404,10 +377,12 @@
                                     </td>
                                     <td class="block_footerText">
                                         <p style="margin: 0px; padding-top: 20px; margin-bottom: 40px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;  color: #26346e; font-weight: bold; float: right;">
-                                            <a href="mailto:sales@rgrauto.com"  style="text-decoration: none; color: #26346e; font-weight: bold;">sales@rgrauto.com  | </a>
-                                            <a href="https://i-sticker.us/"  style="text-decoration: none; color: #26346e; font-weight: bold;" > i-sticker.com  |  </a>
-                                            833.747.2886 
-                                            <img class="flag" src="http://dianaivanovna1999.tmweb.ru/email_img/flag.png" alt="flag america" style="float: right; margin-left: 10px;" />
+                                            <a href="mailto:info@rgrauto.com" style="text-decoration: none; color: #26346e; font-weight: bold;">sales@rgrauto.com  | </a>
+                                            <a  href="https://rgrauto.com/" style="text-decoration: none; color: #26346e; font-weight: bold;" > i-sticker.com  |  </a>
+                                            <a href="tel:8337472886" style="text-decoration: none; color: #26346e; font-weight: bold;" >
+                                                833-747-2886 
+                                            </a>
+                                            <img class="flag" src="http://dianaivanovna1999.tmweb.ru/email_img/flag.png" alt="flag america" width="20" height="20" style="float: right; margin-left: 10px;" />
                                         </p>
                                     </td>
                                 </tr>
